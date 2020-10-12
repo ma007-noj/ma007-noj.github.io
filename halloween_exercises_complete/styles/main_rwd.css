@@ -1,0 +1,163 @@
+@import url(normalize.css);
+html{
+	font-family:  sans-serif;
+}
+body{
+	background-image: url("../images/bats.gif");
+	max-width: 960px;
+	 margin: auto;
+	 height: 95%;
+}
+.page{
+	background-color: white;
+	border:5px solid black;
+	box-shadow: 5px 5px 5px 5px black;
+
+}
+a{
+	color: orange;
+}
+a:visited{
+	color: orange;
+}
+a:hover{
+	color: green;
+}
+h3, h2, h1{
+	font-size: 180%;
+}
+
+header img{
+	float: left;
+	/*width: 100px;*/
+}
+header h2, header h3{
+	/*float: right;*/
+	/*margin-left: 10px;*/
+	text-indent: 50px;
+	margin: 0.00em;
+
+}
+ .welcome::first-letter {
+  font-size: 200%;
+}
+.main-header{
+/*	color: orange;
+	text-shadow: 2px 2px black;
+  	font-style: italic;*/
+}
+footer{
+	font-size: 90%;
+	text-align: center;
+}
+li{
+	margin-top: 0.625em;
+  	
+}
+ul{
+	list-style: none;
+	padding: 0.625em;
+	margin: 0.625em;
+}
+header{
+	padding: 0.625em;
+	border-bottom: 1px solid black;
+	background-image: linear-gradient(45deg, white, orange 75%, black);
+}
+footer{
+	border-top: 1px solid black;
+	padding: 0.625em;
+	background-image: linear-gradient(45deg, black, orange 75%, white);
+}
+.sidebar{
+	margin-top: 1.875em;
+	width:10em;
+	float: left;
+
+}
+.content{
+	width: 630px;
+	float: right;
+
+}
+.link{
+	text-decoration: none;
+}
+.clearfix {
+  overflow: auto;
+}
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  padding: 0.875em 1em;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .drop-btn {
+  font-size: 1em;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.875em 1em;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; 
+}
+
+.navbar a:hover, .dropdown:hover .drop-btn {
+  background-color: grey;
+}
+
+.dropdown-items {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-items a {
+  float: none;
+  color: white;
+  padding: 0.750em 1em;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-items a:hover {
+  background-color: grey;
+}
+
+.dropdown:hover .dropdown-items {
+  display: block;
+}
+.navbar .active{
+	color: orange;
+}
+.box a{
+	color: black;
+	text-decoration: none
+}
+.box{
+	border: 1px solid black;
+	padding: 0.313em;
+	background-color: orange;
+}
+header img{
+	min-width: 40px;
+}
