@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>GPA Calculation Page </title>
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/form.css">
+<div style="color: #e06c46">
+<p><h1> AUM |Auburn University of Montgomery </h1></p>
+</p>
+</div>
+<ul>
+   <li><a href="index.html">Home</a></li>
+  <li><a href="program_details.html">Program Details</a></li>
+  <li><a href="teaching_application.html">Teaching Assistant</a></li>
+  <li>
+    <a href="gpa.html">GPA Calculator</a></li>
+</ul>
+<body >
+<div id="main" class="form-style-9">
+<form  id="frm1">
+<h3>GPA Calculator </h3>
+<ul>
+<li>
+    <input type="text" name="subject1" class="field-style " placeholder="Subject Name" /></li><li>
+    <input type="text" name="LG1" class="field-style" placeholder="Enter Letter Grade" /></li><li>
+    <input type="number" name="CH1" class="field-style" placeholder="Credit Hour" />
+</li>
+<li>
+    <input type="text" name="subject2" class="field-style " placeholder="Subject Name" /></li><li>
+    <input type="text" name="LG2" class="field-style" placeholder="Enter Letter Grade" /></li><li>
+    <input type="number" name="CH2" class="field-style" placeholder="Credit Hour" />
+</li>
+</ul>
+</form></br>
+<div class="submit_updated">
+<input type="Submit" name="submit" onclick="myFunction()"/>
+</div>
+</div>
+</div>
+<div class="form-style-9" id="show_after_click" style="display:none;" >
+  <H2>GPA Calculation Details</H2>
+
+<p id="display1" ></p>
+<p id="display2"></p>
+<p id="display3"></p>
+<p id="display4"></p>
+<p id="display5"></p>
+<p id="display6"></p>
+<p id="display7"></p>
+<p id="display8"></p>
+<p id="display9"></p>
+<p id="display10"></p>
+<p id="display11"></p>
+<p id="display12"></p>
+</div>
+
+<script>
+function myFunction() {
+document.getElementById('main').style.display = "none";
+
+document.getElementById('show_after_click').style.display = "block";
+
+
+  var x = document.getElementById("frm1");
+  var subject1 = x.elements[0].value;
+ var letterg1 = x.elements[1].value;
+  var CH1 = parseInt(x.elements[2].value);
+  var subject2 = x.elements[3].value;
+ var letterg2 = x.elements[4].value;
+  var CH2 = parseInt(x.elements[5].value);
+
+    var s1grade_value;
+  if(letterg1 == 'A'){
+    s1grade_value = 4;
+
+  }else if (letterg1=='B') {s1grade_value = 3;}
+  else if (letterg1=='C') {s1grade_value = 2;}
+  else if (letterg1=='D') {s1grade_value = 1;}
+  else if (letterg1=='F') {s1grade_value = 0;}
+
+var s2grade_value;
+    if(letterg2 == 'A'){
+    s2grade_value = 4;
+
+  }else if (letterg2=='B') {s2grade_value = 3;}
+else if (letterg2=='C') {s2grade_value = 2;}
+  else if (letterg2=='D') {s2grade_value = 1;}
+  else if (letterg2=='F') {s2grade_value = 0;}
+
+
+    
+    var total_grade = s1grade_value+s2grade_value;
+ 
+    var s1data = (CH1 * s1grade_value);
+    var s2data = (CH2 * s2grade_value);
+    var total_credit = CH1 + CH2;
+    var GPA= (s1data + s2data)/total_credit;
+    
+
+ document.getElementById("display1").innerHTML = "Subject 1: " + subject1;
+
+  document.getElementById("display2").innerHTML = " Letter Grade 1: " + letterg1;
+  document.getElementById("display3").innerHTML = "Letter Grade 1 Value : " +s1grade_value;
+  document.getElementById("display4").innerHTML = " Credit Hour 1 :" + CH1;
+  document.getElementById("display5").innerHTML = "Subject 2:" + subject2;
+  document.getElementById("display6").innerHTML = "Letter Grade 2: " + letterg2;
+  document.getElementById("display7").innerHTML = "Letter Grade 2 Value : " +s2grade_value;
+  document.getElementById("display8").innerHTML = "Credit Hour 2: " +CH2;
+
+
+document.getElementById("display9").innerHTML = "Total Credit : " +total_credit;
+
+document.getElementById("display11").innerHTML = "GPA Calculation : " +GPA;
+}
+</script>
+</body>
+  <footer>
+  <ul>
+  <li>Prepared By: Manojchandra Sandineni</li>
+  
+</ul><ul>
+  <li>contact : manojchandra1510@gmail.com</li>
+  
+</ul><ul>
+  <li>Copyright @ 2020 Manoj, All rights reserved</li>
+  
+</ul>
+  </footer>
+
+</html>
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Auburn University at Montgomery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/header.css">
+
+<div style="color: #e06c46">
+<p><h1> AUM |Auburn University of Montgomery </h1></p>
+</p>
+</div>
+<body>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="program_details.html">Program Details</a></li>
+  <li><a href="teaching_application.html">Teaching Assistant</a></li>
+  <li>
+    <a href="gpa.html">GPA Calculator</a></li>
+</ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/1.jpg" style="width:100%">
+  <div class="text"><h2>Live Demonstration</h2></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+<div style="color: #e06c46" align="center">
+<p><h2> Department of Computer Science and Computer Information System </h2 ></p>
+
+
+<div class = "column1" style="background-color: #e06c46; width: 60%; 
+color:white; float: left; border: 5px outset #dbd3d0;border-color: white;">
+	<h1>E - Notice Board</h1>
+	<p>Class Time Table</p><p>Submission Schedule</p><p>Assignment List</p>
+  <p>Practical List</p>
+
+</div>
+<div class = "column1" style="background-color: #e06c46; width: 40%; 
+color:white;float: right;border: 5px outset #dbd3d0;border-color: white;">
+  <img src="images/notice.jpg" style="width:100%">
+</div>
+
+<div class = "column1" style="background-color: #e06c46; width: 60%; 
+color:white; float: left; border: 5px outset #dbd3d0;border-color: white;">
+  <h1>Event List</h1>
+  <p>Programming Competition</p><p>UI/UX design ideas for web and moobile app</p><p>Logo design</p>
+  <p>Smart home device ideas</p><p>AI powered chat bots</p>
+
+</div>
+<div class = "column1" style="background-color: #e06c46; width: 40%; 
+color:white;float: right;border: 5px outset #dbd3d0;border-color: white;">
+  <img src="images/events.jpg" style="width:100%">
+</div>
+
+<div class = "column1" style="background-color: #e06c46; width: 60%; 
+color:white; float: left; border: 5px outset #dbd3d0;border-color: white;">
+  <h1>Student Activites</h1>
+  <p>Class Time Table</p><p>Submission Schedule</p><p>Assignment List</p>
+  <p>Practical List</p><p>Admitted Student List</p>
+
+</div>
+<div class = "column1" style="background-color: #e06c46; width: 40%; 
+color:white;float: right;border: 5px outset #dbd3d0;border-color: white;">
+  <img src="images/4.jpg" style="width:100%">
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+<footer>
+  <p style="color: white">
+    Sample data
+   </p>
+
+  </footer>
+  <footer>
+  <ul>
+  <li>Prepared By: Manojchandra Sandineni</li>
+  
+</ul><ul>
+  <li>contact : manojchandra1510@gmail.com</li>
+  
+</ul><ul>
+  <li>Copyright @ 2020 Manojchandra, All rights reserved</li>
+  
+</ul>
+  </footer>
+</html>

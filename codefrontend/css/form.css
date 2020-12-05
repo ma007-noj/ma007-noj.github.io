@@ -1,0 +1,58 @@
+.form-style-9{
+	max-width: 650px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #e06c46;
+}
+.form-style-9 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	border: 2px solid #e06c46;
+}
+.form-style-9 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+	border: 2px solid #e06c46;
+}
+.form-style-9 ul li  .field-style{
+	box-sizing: border-box; 
+	 border: 2px solid #e06c46;
+	padding: 8px;
+	outline: none;
+	
+	
+
+}
+
+.form-style-9 ul li select{
+	width: 200px;
+	height: 35px;
+	border: 2px solid #e06c46;
+
+}
+
+.form-style-9 ul li textarea{
+	width: 150%;
+	height: 150px;
+	border: 2px solid #e06c46;
+
+}
+
+
+.submit_updated input[type="submit"]{background-color: white;
+	
+	display: inline-block;
+	cursor: pointer;
+	color: black;
+	border-color: #e06c46;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;}
+
+	
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<title>Teaching Assistant Application </title>
+
+  
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/form.css">
+
+<div style="color: #e06c46">
+<p><h1> AUM |Auburn University of Montgomery </h1></p>
+</p>
+</div>
+
+<ul>
+   <li><a href="index.html">Home</a></li>
+  <li><a href="program_details.html">Program Details</a></li>
+  <li><a href="teaching_application.html">Teaching Assistant</a></li>
+  <li>
+    <a href="gpa.html">GPA Calculator</a></li>
+</ul>
+
+<body >
+
+
+<div id="main" class="form-style-9">
+
+
+<form  id="frm1">
+<h3>Teaching Assistant</h3>
+<ul>
+
+<li>
+    <input type="text" name="name" class="field-style " placeholder="Your Name" />
+   
+</li></ul>
+<ul>
+<li>
+     <input type="number" name="field2" class="field-style" placeholder="Your Student ID" />
+</li>
+</ul>
+<ul>
+<li>
+    <input type="number" name="field3" class="field-style " placeholder="Your GPA" />
+  </li></ul>
+
+  <ul><li>
+    <input type="date" name="field4" class="field-style " placeholder="Your Submission Date" />
+</li></ul>
+<ul>
+<li>
+<select name="field3" class="field-style" placeholder="Your Gender"><option>Male</option><option>Female</option></select>
+</li>
+</ul>
+<ul>
+<li>
+<textarea name="field5" class="field-style" placeholder="Your Comments"></textarea>
+</li>
+</ul>
+</form></br>
+<div class="submit_updated">
+<input type="Submit" name="submit" onclick="myFunction()"/>
+</div>
+</div>
+
+</div>
+  
+<div class="form-style-9" id="show_after_click" style="display:none;" >
+<h2>Teaching Assistant Details</h2>
+<p id="demo1" ></p>
+
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+</div>
+<script>
+
+
+
+
+function myFunction() {
+
+
+
+document.getElementById('show_after_click').style.display = "block";
+  var v = document.getElementById("main");
+  if (v.style.display === "none") {
+         v.style.display = "block";
+      } else {
+         v.style.display = "none";
+      }
+
+
+  var x = document.getElementById("frm1");
+  var fname = x.elements[0].value;
+  var sid = x.elements[1].value;
+  var gpa = x.elements[2].value;
+  var sdate = x.elements[3].value;
+  var gender = x.elements[4].value;
+  var comments = x.elements[5].value;
+  
+ document.getElementById("demo1").innerHTML = "Your Name: " + fname;
+
+  document.getElementById("demo2").innerHTML = " Your Id: " + sid;
+  document.getElementById("demo3").innerHTML = " Your GPA :" + gpa;
+  document.getElementById("demo4").innerHTML = "Your Submission Date:" + sdate;
+  document.getElementById("demo5").innerHTML = "Your Gender: " + gender;
+  document.getElementById("demo6").innerHTML = "Your Comments: " +comments;
+
+}
+</script>
+
+</body>
+<footer>
+  <ul>
+  <li>Prepared By: Manojchandra Sandineni</li>
+  
+</ul><ul>
+  <li>contact : manojchandra1510@gmail.com</li>
+  
+</ul><ul>
+  <li>Copyright @ 2020 Manoj, All rights reserved</li>
+  
+</ul>
+  </footer>
+</html>
